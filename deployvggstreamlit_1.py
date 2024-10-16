@@ -25,7 +25,7 @@ ngrok.set_auth_token(authtoken)
 from tensorflow.keras.models import load_model
 
 # Memuat model dari file
-model = load_model('/content/drive/My Drive/modelVGG16ep24.h5')
+model = load_model('modelVGG16ep24.h5')
 
 
 import streamlit as st
@@ -47,7 +47,7 @@ model = load_model('modelVGG16ep24.h5')
 # # Fungsi untuk memuat model (gantilah 'model_path' dengan path model Anda)
 # @st.cache(allow_output_mutation=True)
 # def load_model():
-#     model = tf.keras.models.load_model('/content/drive/My Drive/modelVGG16ep24.h5')  # Ganti dengan path model Anda
+#     model = tf.keras.models.load_model('modelVGG16ep24.h5')  # Ganti dengan path model Anda
 #     return model
 # 
 # # Memuat model
