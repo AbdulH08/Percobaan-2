@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1OcfKd7yGSbcnPs2P8iW4XjIeoDhcdQ5e
 """
 
-import gdown
-
 url = 'https://drive.google.com/uc?id=17tPbN2_7ZyBriedo7gHEB2KEYPE90rRs&export=download'  # Ganti dengan file ID Google Drive
 output = 'modelVGG16ep24.h5'
 gdown.download(url, output, quiet=False)
@@ -109,7 +107,6 @@ model = load_model('modelVGG16ep24.h5')
 #     st.write("Silakan unggah gambar untuk memulai deteksi.")
 #
 
-import os
 from pyngrok import ngrok
 
 def run_streamlit():
