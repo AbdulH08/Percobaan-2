@@ -106,7 +106,7 @@ model = load_model('modelVGG16ep24.h5')
 # if __name__ == '__main__':
 #     st.write("Silakan unggah gambar untuk memulai deteksi.")
 #
-
+import os
 from pyngrok import ngrok
 
 def run_streamlit():
