@@ -13,11 +13,8 @@ url = 'https://drive.google.com/uc?id=17tPbN2_7ZyBriedo7gHEB2KEYPE90rRs&export=d
 output = 'modelVGG16ep24.h5'
 gdown.download(url, output, quiet=False)
 
-!pip install tensorflow==2.13.0
 
 # Langkah 1: Instal Streamlit dan Ngrok
-!pip install streamlit
-!pip install pyngrok
 
 # Langkah 2: Tambahkan authtoken ngrok yang Anda dapatkan
 authtoken = "2hv1ooNcvUTecrns1LQZPNuHjEc_5HjEnceCo4vcaHKtW6rXD"
