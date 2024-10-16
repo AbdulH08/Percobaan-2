@@ -29,7 +29,7 @@ from tensorflow.keras.models import load_model
 # Memuat model dari file
 model = load_model('/content/drive/My Drive/modelVGG16ep24.h5')
 
-!pip install streamlit
+
 import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.models import load_model
