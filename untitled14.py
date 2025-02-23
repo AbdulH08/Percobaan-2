@@ -7,11 +7,12 @@ Original file is located at
     https://colab.research.google.com/drive/1lSc-cgrQQ2d1V6f43tMgmC4Chr7hypwB
 """
 
-import gdown
+import requests
 
-url = 'https://drive.google.com/uc?id=17tPbN2_7ZyBriedo7gHEB2KEYPE90rRs&export=download'
-output = 'modelVGG16ep24.h5'
-gdown.download(url, output, quiet=False, use_cookies=False)
+url = "https://drive.google.com/uc?id=17tPbN2_7ZyBriedo7gHEB2KEYPE90rRs&export=download"
+response = requests.get(url)
+with open("output_file.ext", "wb") as f:
+    f.write(response.content)
     
 import streamlit as st
 import tensorflow as tf
