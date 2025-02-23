@@ -11,8 +11,8 @@ import gdown
 
 url = 'https://drive.google.com/uc?id=17tPbN2_7ZyBriedo7gHEB2KEYPE90rRs&export=download'
 output = 'modelVGG16ep24.h5'
-gdown.download(url, output, quiet=False)
-
+gdown.download(url, output, quiet=False, use_cookies=False)
+    
 import streamlit as st
 import tensorflow as tf
 import numpy as np
